@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADFD9DEE76F06D46D38BE4E3 /* Pods_Password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D922F2DAB9AC091D4DAA103B /* Pods_Password.framework */; };
+		C0D29A6920A1434600B7610C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A6820A1434600B7610C /* AppDelegate.swift */; };
+		C0D29A7020A1434800B7610C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D29A6F20A1434800B7610C /* Assets.xcassets */; };
+		C0D29A7320A1434800B7610C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D29A7120A1434800B7610C /* LaunchScreen.storyboard */; };
+		C0D29A8220A1437200B7610C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A7A20A1437100B7610C /* UIViewExtension.swift */; };
+		C0D29A8320A1437200B7610C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A7B20A1437100B7610C /* UIViewControllerExtension.swift */; };
+		C0D29A8420A1437200B7610C /* UIApplictionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A7C20A1437200B7610C /* UIApplictionExtension.swift */; };
+		C0D29A8520A1437200B7610C /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A7D20A1437200B7610C /* TimerExtension.swift */; };
+		C0D29A8620A1437200B7610C /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A7E20A1437200B7610C /* BasicView.swift */; };
+		C0D29A8820A1437200B7610C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A8020A1437200B7610C /* UIColorExtension.swift */; };
+		C0D29A8920A1437200B7610C /* LOTAnimationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A8120A1437200B7610C /* LOTAnimationViewExtension.swift */; };
+		C0D29A8C20A1439B00B7610C /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A8B20A1439B00B7610C /* MainController.swift */; };
+		C0D29A8E20A14DCD00B7610C /* MainController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A8D20A14DCD00B7610C /* MainController+TableViewDelegate.swift */; };
+		C0D29A9020A152E400B7610C /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A8F20A152E400B7610C /* PasswordCell.swift */; };
+		C0D29A9320A1543100B7610C /* CreateAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9220A1543100B7610C /* CreateAccountController.swift */; };
+		C0D29A9620A202E300B7610C /* PasswordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9420A202E300B7610C /* PasswordModel.xcdatamodeld */; };
+		C0D29A9920A20AC800B7610C /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9820A20AC800B7610C /* CreateAccountView.swift */; };
+		C0D29A9B20A20E8C00B7610C /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9A20A20E8C00B7610C /* CoredataManager.swift */; };
+		C0D29A9D20A2182F00B7610C /* CreateAccountController+NaviDelegate+ImgPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9C20A2182F00B7610C /* CreateAccountController+NaviDelegate+ImgPickerDelegate.swift */; };
+		C0D29A9F20A21B1100B7610C /* CreateAccountController+ProfileImgViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29A9E20A21B1100B7610C /* CreateAccountController+ProfileImgViewDelegate.swift */; };
+		C0D29AA120A241F400B7610C /* MainController+AddAndEditAccountDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AA020A241F400B7610C /* MainController+AddAndEditAccountDelegate.swift */; };
+		C0D29AAA20A3A1E300B7610C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D29AA920A3A1E300B7610C /* LocalAuthentication.framework */; };
+		C0D29AAC20A3A53400B7610C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AAB20A3A53400B7610C /* LoginViewController.swift */; };
+		C0D29AAE20A3A7AD00B7610C /* LoginViewController+AuthenticDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AAD20A3A7AD00B7610C /* LoginViewController+AuthenticDelegate.swift */; };
+		C0D29AB020A3E16800B7610C /* CreateAccountView+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AAF20A3E16800B7610C /* CreateAccountView+CollectionView.swift */; };
+		C0D29AB220A3E29F00B7610C /* ServiceIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AB120A3E29E00B7610C /* ServiceIconCell.swift */; };
+		C0D29AB420A3E2D400B7610C /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AB320A3E2D400B7610C /* BasicCell.swift */; };
+		C0D29AB720A4D74100B7610C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D29AB620A4D74100B7610C /* MainTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6677AA429F80202E65C8A3A /* Pods-Password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Password/Pods-Password.debug.xcconfig"; sourceTree = "<group>"; };
+		A678D886A42063D047ACB776 /* Pods-Password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password.release.xcconfig"; path = "Pods/Target Support Files/Pods-Password/Pods-Password.release.xcconfig"; sourceTree = "<group>"; };
+		C0D29A6520A1434600B7610C /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D29A6820A1434600B7610C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0D29A6F20A1434800B7610C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0D29A7220A1434800B7610C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0D29A7420A1434800B7610C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D29A7A20A1437100B7610C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C0D29A7B20A1437100B7610C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		C0D29A7C20A1437200B7610C /* UIApplictionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplictionExtension.swift; sourceTree = "<group>"; };
+		C0D29A7D20A1437200B7610C /* TimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerExtension.swift; sourceTree = "<group>"; };
+		C0D29A7E20A1437200B7610C /* BasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
+		C0D29A8020A1437200B7610C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C0D29A8120A1437200B7610C /* LOTAnimationViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOTAnimationViewExtension.swift; sourceTree = "<group>"; };
+		C0D29A8B20A1439B00B7610C /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		C0D29A8D20A14DCD00B7610C /* MainController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		C0D29A8F20A152E400B7610C /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		C0D29A9220A1543100B7610C /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
+		C0D29A9520A202E300B7610C /* PasswordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordModel.xcdatamodel; sourceTree = "<group>"; };
+		C0D29A9820A20AC800B7610C /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		C0D29A9A20A20E8C00B7610C /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
+		C0D29A9C20A2182F00B7610C /* CreateAccountController+NaviDelegate+ImgPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountController+NaviDelegate+ImgPickerDelegate.swift"; sourceTree = "<group>"; };
+		C0D29A9E20A21B1100B7610C /* CreateAccountController+ProfileImgViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountController+ProfileImgViewDelegate.swift"; sourceTree = "<group>"; };
+		C0D29AA020A241F400B7610C /* MainController+AddAndEditAccountDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+AddAndEditAccountDelegate.swift"; sourceTree = "<group>"; };
+		C0D29AA920A3A1E300B7610C /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C0D29AAB20A3A53400B7610C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C0D29AAD20A3A7AD00B7610C /* LoginViewController+AuthenticDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+AuthenticDelegate.swift"; sourceTree = "<group>"; };
+		C0D29AAF20A3E16800B7610C /* CreateAccountView+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountView+CollectionView.swift"; sourceTree = "<group>"; };
+		C0D29AB120A3E29E00B7610C /* ServiceIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceIconCell.swift; sourceTree = "<group>"; };
+		C0D29AB320A3E2D400B7610C /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		C0D29AB620A4D74100B7610C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D922F2DAB9AC091D4DAA103B /* Pods_Password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0D29A6220A1434600B7610C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D29AAA20A3A1E300B7610C /* LocalAuthentication.framework in Frameworks */,
+				ADFD9DEE76F06D46D38BE4E3 /* Pods_Password.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D2955AC526253227044CEDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6677AA429F80202E65C8A3A /* Pods-Password.debug.xcconfig */,
+				A678D886A42063D047ACB776 /* Pods-Password.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0D29A5C20A1434600B7610C = {
+			isa = PBXGroup;
+			children = (
+				C0D29A6720A1434600B7610C /* Password */,
+				C0D29A6620A1434600B7610C /* Products */,
+				8D2955AC526253227044CEDF /* Pods */,
+				C30C6A87EF59449066AAE4CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0D29A6620A1434600B7610C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A6520A1434600B7610C /* Password.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0D29A6720A1434600B7610C /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A6820A1434600B7610C /* AppDelegate.swift */,
+				C0D29AB620A4D74100B7610C /* MainTabBarController.swift */,
+				C0D29AB520A4D71500B7610C /* LoginViewController */,
+				C0D29A9120A1541000B7610C /* MainController */,
+				C0D29A9720A20AA300B7610C /* CreatePasswordController */,
+				C0D29A8A20A1437700B7610C /* Utilities */,
+				C0D29A6F20A1434800B7610C /* Assets.xcassets */,
+				C0D29A7120A1434800B7610C /* LaunchScreen.storyboard */,
+				C0D29A7420A1434800B7610C /* Info.plist */,
+				C0D29A9420A202E300B7610C /* PasswordModel.xcdatamodeld */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		C0D29A8A20A1437700B7610C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A7E20A1437200B7610C /* BasicView.swift */,
+				C0D29AB320A3E2D400B7610C /* BasicCell.swift */,
+				C0D29A8120A1437200B7610C /* LOTAnimationViewExtension.swift */,
+				C0D29A7D20A1437200B7610C /* TimerExtension.swift */,
+				C0D29A7C20A1437200B7610C /* UIApplictionExtension.swift */,
+				C0D29A8020A1437200B7610C /* UIColorExtension.swift */,
+				C0D29A7B20A1437100B7610C /* UIViewControllerExtension.swift */,
+				C0D29A7A20A1437100B7610C /* UIViewExtension.swift */,
+				C0D29A9A20A20E8C00B7610C /* CoredataManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C0D29A9120A1541000B7610C /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29AA420A3640000B7610C /* Controller */,
+				C0D29AA520A3640600B7610C /* View */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		C0D29A9720A20AA300B7610C /* CreatePasswordController */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29AA220A363F000B7610C /* Controller */,
+				C0D29AA320A363F700B7610C /* View */,
+			);
+			path = CreatePasswordController;
+			sourceTree = "<group>";
+		};
+		C0D29AA220A363F000B7610C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A9220A1543100B7610C /* CreateAccountController.swift */,
+				C0D29A9C20A2182F00B7610C /* CreateAccountController+NaviDelegate+ImgPickerDelegate.swift */,
+				C0D29A9E20A21B1100B7610C /* CreateAccountController+ProfileImgViewDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0D29AA320A363F700B7610C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A9820A20AC800B7610C /* CreateAccountView.swift */,
+				C0D29AAF20A3E16800B7610C /* CreateAccountView+CollectionView.swift */,
+				C0D29AB120A3E29E00B7610C /* ServiceIconCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0D29AA420A3640000B7610C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A8B20A1439B00B7610C /* MainController.swift */,
+				C0D29AA020A241F400B7610C /* MainController+AddAndEditAccountDelegate.swift */,
+				C0D29A8D20A14DCD00B7610C /* MainController+TableViewDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0D29AA520A3640600B7610C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29A8F20A152E400B7610C /* PasswordCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0D29AB520A4D71500B7610C /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29AAB20A3A53400B7610C /* LoginViewController.swift */,
+				C0D29AAD20A3A7AD00B7610C /* LoginViewController+AuthenticDelegate.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		C30C6A87EF59449066AAE4CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0D29AA920A3A1E300B7610C /* LocalAuthentication.framework */,
+				D922F2DAB9AC091D4DAA103B /* Pods_Password.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0D29A6420A1434600B7610C /* Password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0D29A7720A1434800B7610C /* Build configuration list for PBXNativeTarget "Password" */;
+			buildPhases = (
+				0CADD3A5B5251289BA2DC492 /* [CP] Check Pods Manifest.lock */,
+				C0D29A6120A1434600B7610C /* Sources */,
+				C0D29A6220A1434600B7610C /* Frameworks */,
+				C0D29A6320A1434600B7610C /* Resources */,
+				E6075C17BC35700BC418BC85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Password;
+			productName = Password;
+			productReference = C0D29A6520A1434600B7610C /* Password.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0D29A5D20A1434600B7610C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "辛忠翰";
+				TargetAttributes = {
+					C0D29A6420A1434600B7610C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C0D29A6020A1434600B7610C /* Build configuration list for PBXProject "Password" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0D29A5C20A1434600B7610C;
+			productRefGroup = C0D29A6620A1434600B7610C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0D29A6420A1434600B7610C /* Password */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0D29A6320A1434600B7610C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D29A7320A1434800B7610C /* LaunchScreen.storyboard in Resources */,
+				C0D29A7020A1434800B7610C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CADD3A5B5251289BA2DC492 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Password-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6075C17BC35700BC418BC85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Password/Pods-Password-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Password/Pods-Password-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0D29A6120A1434600B7610C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D29AB420A3E2D400B7610C /* BasicCell.swift in Sources */,
+				C0D29A9F20A21B1100B7610C /* CreateAccountController+ProfileImgViewDelegate.swift in Sources */,
+				C0D29AB720A4D74100B7610C /* MainTabBarController.swift in Sources */,
+				C0D29A9020A152E400B7610C /* PasswordCell.swift in Sources */,
+				C0D29A9B20A20E8C00B7610C /* CoredataManager.swift in Sources */,
+				C0D29A9920A20AC800B7610C /* CreateAccountView.swift in Sources */,
+				C0D29AAC20A3A53400B7610C /* LoginViewController.swift in Sources */,
+				C0D29A8620A1437200B7610C /* BasicView.swift in Sources */,
+				C0D29A8320A1437200B7610C /* UIViewControllerExtension.swift in Sources */,
+				C0D29AA120A241F400B7610C /* MainController+AddAndEditAccountDelegate.swift in Sources */,
+				C0D29A8220A1437200B7610C /* UIViewExtension.swift in Sources */,
+				C0D29AAE20A3A7AD00B7610C /* LoginViewController+AuthenticDelegate.swift in Sources */,
+				C0D29A8C20A1439B00B7610C /* MainController.swift in Sources */,
+				C0D29A8920A1437200B7610C /* LOTAnimationViewExtension.swift in Sources */,
+				C0D29A9D20A2182F00B7610C /* CreateAccountController+NaviDelegate+ImgPickerDelegate.swift in Sources */,
+				C0D29A8E20A14DCD00B7610C /* MainController+TableViewDelegate.swift in Sources */,
+				C0D29AB220A3E29F00B7610C /* ServiceIconCell.swift in Sources */,
+				C0D29A9320A1543100B7610C /* CreateAccountController.swift in Sources */,
+				C0D29A8820A1437200B7610C /* UIColorExtension.swift in Sources */,
+				C0D29A8420A1437200B7610C /* UIApplictionExtension.swift in Sources */,
+				C0D29A6920A1434600B7610C /* AppDelegate.swift in Sources */,
+				C0D29A8520A1437200B7610C /* TimerExtension.swift in Sources */,
+				C0D29AB020A3E16800B7610C /* CreateAccountView+CollectionView.swift in Sources */,
+				C0D29A9620A202E300B7610C /* PasswordModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0D29A7120A1434800B7610C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0D29A7220A1434800B7610C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0D29A7520A1434800B7610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0D29A7620A1434800B7610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0D29A7820A1434800B7610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6677AA429F80202E65C8A3A /* Pods-Password.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAGW44Z6JC;
+				INFOPLIST_FILE = Password/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.Password;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0D29A7920A1434800B7610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A678D886A42063D047ACB776 /* Pods-Password.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAGW44Z6JC;
+				INFOPLIST_FILE = Password/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coolApp.com.Password;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0D29A6020A1434600B7610C /* Build configuration list for PBXProject "Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D29A7520A1434800B7610C /* Debug */,
+				C0D29A7620A1434800B7610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0D29A7720A1434800B7610C /* Build configuration list for PBXNativeTarget "Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D29A7820A1434800B7610C /* Debug */,
+				C0D29A7920A1434800B7610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0D29A9420A202E300B7610C /* PasswordModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0D29A9520A202E300B7610C /* PasswordModel.xcdatamodel */,
+			);
+			currentVersion = C0D29A9520A202E300B7610C /* PasswordModel.xcdatamodel */;
+			path = PasswordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C0D29A5D20A1434600B7610C /* Project object */;
+}
